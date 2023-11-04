@@ -25,6 +25,14 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  late TextEditingController controller;
+
+  @override
+  void initState() {
+    controller = TextEditingController();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

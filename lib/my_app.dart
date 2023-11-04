@@ -1,6 +1,7 @@
 // my_app.dart
 import 'package:flutter/material.dart';
 import 'my_home_page.dart';  // Importa la clase MyHomePage desde otro archivo
+import 'input_screen.dart';  // Importa la clase InputScreen desde otro archivo
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const InputScreen(),
     );
   }
 }

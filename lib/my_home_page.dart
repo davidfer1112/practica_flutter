@@ -37,8 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red, // Color rojo para la AppBar
-        title: Text('Mi Primera App'), // Título personalizado
+        backgroundColor: Colors.red,
+        title: Text('Mi Primera App'),
       ),
       body: Center(
         child: Column(
@@ -58,12 +58,19 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: _decrementCounter,
                   child: Icon(Icons.remove),
                 ),
-                SizedBox(width: 16), // Espacio entre los botones
+                SizedBox(width: 16),
                 ElevatedButton(
                   onPressed: _incrementCounter,
                   child: Icon(Icons.add),
                 ),
               ],
+            ),
+            SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/adivina'); // Navegar a la pantalla de AdivinaNumeroScreen
+              },
+              child: Text('Adivina el Número'),
             ),
           ],
         ),
